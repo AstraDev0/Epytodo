@@ -144,10 +144,6 @@ docker-compose up -d
 - **bcryptjs**: Library to hash passwords.
 - **body-parser**: Middleware to parse incoming request bodies (optional).
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgements
 
 - [Node.js](https://nodejs.org/)
