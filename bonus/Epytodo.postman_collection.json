@@ -1,0 +1,484 @@
+{
+	"info": {
+		"_postman_id": "8046d8ff-f2eb-4ae2-adca-2552bad0a6ae",
+		"name": "Epytodo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11103701"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "qfdfqds",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "fefsd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "fddfs",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "fd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/todos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:emailorid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "dsdfdsf@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "dsdfdsf@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "ssdqsqdsqd",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "sdqsqdqsd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/todos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/todos/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/todos/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/todos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "dsfsfd",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description",
+							"type": "text"
+						},
+						{
+							"key": "duetime",
+							"value": "2021-03-03 19:24:00",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "progress",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/todos/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "fdssfd",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "d\n",
+							"type": "text"
+						},
+						{
+							"key": "duetime",
+							"value": "2021-03-03 19:24:00",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "sfdfsd",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/todos/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/todos/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OTIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2NTMwNDczNzZ9.J967dW2I1RVh7J8YmS-ciSEnF2t19tjhF8eoYc_hTbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/todos/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
